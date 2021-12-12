@@ -111,7 +111,11 @@ public class MainView extends UI{
 	}
 	
 	private void setForm() {
-		
+		VerticalLayout vl=new VerticalLayout();
+		Label p=new Label("Enter City");
+		p.addStyleName(ValoTheme.LABEL_H2);
+		p.addStyleName(ValoTheme.LABEL_BOLD);
+		vl.addComponent(p);
 		HorizontalLayout form= new HorizontalLayout();
 		form.setSpacing(true);
 		form.setMargin(true);
@@ -134,6 +138,8 @@ public class MainView extends UI{
 		searchButton.setIcon(VaadinIcons.SEARCH);
 		form.addComponent(searchButton);
 		
+		mainLayout.addComponent(p);
+		mainLayout.setComponentAlignment(p, com.vaadin.ui.Alignment.MIDDLE_CENTER);
 		
 		mainLayout.addComponent(form);
 		mainLayout.setComponentAlignment(form, com.vaadin.ui.Alignment.MIDDLE_CENTER);
