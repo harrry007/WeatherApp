@@ -50,7 +50,7 @@ public class WeatherService {
 
 	static JSONObject getWeather() {
 		BufferedReader reader;
-		String st="https://api.openweathermap.org/data/2.5/weather?q="+getCityName()+"&units="+getUnit()+"&appid=4eba133706e6b63b083f822086e57810";
+		String st="https://api.openweathermap.org/data/2.5/weather?q="+getCityName()+"&units="+getUnit()+"&appid=<your api token>";
 		String line;
 		StringBuffer rc=new StringBuffer();
 		
