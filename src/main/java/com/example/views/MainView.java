@@ -212,7 +212,7 @@ public class MainView extends UI{
 		String city=textField.getValue();
 		String unit;
 		ws.setCityName(city);
-		if(unitSelect.getValue().equals("F")) {
+		if(unitSelect.getValue().equals("\u00b0"+"F")) {
 			ws.setUnit("imperial");
 			unitSelect.setValue("F");
 			unit="\u00b0"+"F";
